@@ -1,0 +1,13 @@
+<div>
+  <h1> Available Movies </h1>
+  <div>
+    {{#each movies}}
+      <div>
+        <img src="{{image}}" />
+        <h3>{{title}}</h3>
+        <a href="/movies/{{_id}}"> See More </a>
+      </div>
+    {{/each}}
+  </div>
+  <a href="/"> Home </a>
+</div>
